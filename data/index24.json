@@ -1,0 +1,34 @@
+{
+    "xui_ui_tabs4":{
+        "items":[
+            {
+                "id":"a",
+                "caption":"page1",
+                "imageClass":"xui-icon-xui"
+            },
+            {
+                "id":"b",
+                "caption":"page2"
+            },
+            {
+                "id":"c",
+                "caption":"page3"
+            },
+            {
+                "id":"d",
+                "caption":"page4",
+                "closeBtn":false,
+                "optBtn":"xui-uicmd-opt",
+                "popBtn":false
+            }
+        ],
+        "listKey":"",
+        "name":""
+    },
+    "xui_ui_panel5":{
+        "html":"",
+        "toggle":true,
+        "name":"",
+        "caption":"Panel"
+    }
+}
