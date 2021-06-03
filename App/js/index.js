@@ -26,22 +26,18 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"a",
-                        "caption":"Details"
-                    },
-                    {
-                        "id":"b",
                         "caption":"Family Tree"
                     },
                     {
-                        "id":"c",
+                        "id":"b",
                         "caption":"Relationships"
                     },
                     {
-                        "id":"d",
+                        "id":"c",
                         "caption":"Careers"
                     },
                     {
-                        "id":"e",
+                        "id":"d",
                         "caption":"Memories"
                     }
                 ])
@@ -55,30 +51,41 @@ xui.Class('App', 'xui.Module',{
             );
             
             host.xui_ui_tabs4.append(
-                xui.create("xui.UI.ToolBar")
-                .setHost(host,"xui_ui_toolbar14")
-                .setItems([
-                    {
-                        "id":"grp1",
-                        "sub":[
-                            {
-                                "id":"a1",
-                                "caption":"button"
-                            },
-                            {
-                                "id":"a2",
-                                "type":"split"
-                            },
-                            {
-                                "id":"a3",
-                                "caption":"button3"
-                            }
-                        ],
-                        "caption":"grp1"
-                    }
-                ])
-                .setTop("160px"),
+                xui.create("xui.UI.SVGPaper")
+                .setHost(host,"xui_ui_svgpaper2")
+                .setLeft("19px")
+                .setTop("10px")
+                .setWidth("820px")
+                .setHeight("525px"),
                 "a"
+            );
+            
+            host.xui_ui_svgpaper2.append(
+                xui.create("xui.UI.FusionChartsXT")
+                .setHost(host,"xui_ui_fusionchartsxt4")
+                .setLeft("80px")
+                .setTop("60px")
+                .setWidth("450px")
+                .setHeight("375px")
+                .setChartType("Cylinder")
+                .setJSONData({
+                    "chart":{
+                        "caption":"Fuel Meter",
+                        "subcaption":"Diesel level in generator Bakersfield Central",
+                        "subcaptionFontBold":"0",
+                        "lowerLimit":"0",
+                        "upperLimit":"120",
+                        "lowerLimitDisplay":"Empty",
+                        "upperLimitDisplay":"Full",
+                        "numberSuffix":" ltrs",
+                        "showValue":"0",
+                        "showhovereffect":"1",
+                        "bgCOlor":"#ffffff",
+                        "borderAlpha":"0",
+                        "cylFillColor":"#008ee4"
+                    },
+                    "value":"110"
+                })
             );
             
             return children;
