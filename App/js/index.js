@@ -65,7 +65,7 @@ xui.Class('App', 'xui.Module',{
                         "locked":false,
                         "folded":false,
                         "hidden":false,
-                        "cmd":true,
+                        "cmd":false,
                         "html":"",
                         "pos":"before"
                     },
@@ -81,10 +81,11 @@ xui.Class('App', 'xui.Module',{
                         "locked":false,
                         "folded":false,
                         "hidden":false,
-                        "cmd":true,
+                        "cmd":false,
                         "pos":"after"
                     }
                 ])
+                .setLocked(true)
                 .setLeft("0px")
                 .setTop("0px"),
                 "a"
