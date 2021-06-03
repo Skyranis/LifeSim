@@ -50,7 +50,7 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("0px")
                 .setTop("0px")
                 .setHeight("210px")
-                .setSandboxTheme("army")
+                .setSandboxTheme("default")
                 .setValue("a")
             );
             
@@ -88,16 +88,6 @@ xui.Class('App', 'xui.Module',{
                 .setLeft("0px")
                 .setTop("0px"),
                 "a"
-            );
-            
-            host.xui_ui_layout17.append(
-                xui.create("xui.UI.Button")
-                .setHost(host,"xui_ui_button49")
-                .setLeft("19px")
-                .setTop("25px")
-                .setCaption("Dropable Button")
-                .setType("drop"),
-                "main"
             );
             
             host.xui_ui_layout17.append(
