@@ -47,9 +47,9 @@ xui.Class('App', 'xui.Module',{
                 ])
                 .setAutoTips(false)
                 .setDisableTips(true)
-                .setLeft("0em")
-                .setTop("0em")
-                .setHeight("16em")
+                .setLeft("0px")
+                .setTop("0px")
+                .setHeight("210px")
                 .setSandboxTheme("army")
                 .setValue("a")
             );
@@ -60,7 +60,7 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"before",
-                        "size":50,
+                        "size":55,
                         "min":10,
                         "locked":false,
                         "folded":false,
@@ -85,24 +85,38 @@ xui.Class('App', 'xui.Module',{
                         "pos":"after"
                     }
                 ])
-                .setLeft("0em")
-                .setTop("0em"),
+                .setLeft("0px")
+                .setTop("0px"),
                 "a"
+            );
+            
+            host.xui_ui_layout17.append(
+                xui.create("xui.UI.Button")
+                .setHost(host,"xui_ui_button49")
+                .setLeft("19px")
+                .setTop("25px")
+                .setCaption("Dropable Button")
+                .setType("drop"),
+                "main"
             );
             
             host.xui_ui_layout17.append(
                 xui.create("xui.UI.Label")
                 .setHost(host,"xui_ui_label22")
-                .setLeft("0.7619047619047619em")
-                .setTop("0.9142857142857143em")
-                .setWidth("13.104761904761904em")
-                .setHeight("2.1333333333333333em")
+                .setLeft("9px")
+                .setTop("5px")
+                .setWidth("172px")
+                .setHeight("28px")
+                .setBottom("0px")
+                .setZIndex(3)
+                .setTabindex(2)
+                .setDisplay("inline")
                 .setCaption("Sim Name")
                 .setHAlign("left")
-                .setFontColor("#2F4F4F")
+                .setFontColor("#6495ED")
                 .setFontSize("22px")
                 .setFontWeight("bold"),
-                "main"
+                "before"
             );
             
             return children;
