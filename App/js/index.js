@@ -85,9 +85,11 @@ xui.Class('App', 'xui.Module',{
                         "pos":"after"
                     }
                 ])
-                .setLocked(true)
+                .setAutoTips(false)
+                .setDisableTips(true)
                 .setLeft("0px")
-                .setTop("0px"),
+                .setTop("0px")
+                .setReadonly(true),
                 "a"
             );
             
