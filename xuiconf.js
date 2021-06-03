@@ -11,7 +11,7 @@
 
 // [[Page Appearance
 xui.ini.$PageAppearance = {
-    "theme":"army"
+    "theme":"classic"
 };
 // ]]Page Appearance
 // To set Font Icons CDN
