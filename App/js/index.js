@@ -26,37 +26,83 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"a",
-                        "caption":"page1"
+                        "caption":"Details"
                     },
                     {
                         "id":"b",
-                        "caption":"page2"
+                        "caption":"Family Tree"
                     },
                     {
                         "id":"c",
-                        "caption":"page3"
+                        "caption":"Relationships"
                     },
                     {
                         "id":"d",
-                        "caption":"page4"
+                        "caption":"Careers"
+                    },
+                    {
+                        "id":"e",
+                        "caption":"Memories"
                     }
                 ])
                 .setAutoTips(false)
                 .setDisableTips(true)
                 .setLeft("0em")
                 .setTop("0em")
-                .setSandboxTheme("classic")
+                .setHeight("16em")
+                .setSandboxTheme("army")
                 .setValue("a")
             );
             
             host.xui_ui_tabs4.append(
-                xui.create("xui.UI.Panel")
-                .setHost(host,"xui_ui_panel5")
-                .setDock("none")
-                .setLeft("0.7619047619047619em")
-                .setTop("1.6761904761904762em")
-                .setCaption("Panel"),
+                xui.create("xui.UI.Layout")
+                .setHost(host,"xui_ui_layout17")
+                .setItems([
+                    {
+                        "id":"before",
+                        "size":50,
+                        "min":10,
+                        "locked":false,
+                        "folded":false,
+                        "hidden":false,
+                        "cmd":true,
+                        "html":"",
+                        "pos":"before"
+                    },
+                    {
+                        "id":"main",
+                        "size":80,
+                        "min":10
+                    },
+                    {
+                        "id":"after",
+                        "size":80,
+                        "min":10,
+                        "locked":false,
+                        "folded":false,
+                        "hidden":false,
+                        "cmd":true,
+                        "pos":"after"
+                    }
+                ])
+                .setLeft("0em")
+                .setTop("0em"),
                 "a"
+            );
+            
+            host.xui_ui_layout17.append(
+                xui.create("xui.UI.Label")
+                .setHost(host,"xui_ui_label22")
+                .setLeft("0.7619047619047619em")
+                .setTop("0.9142857142857143em")
+                .setWidth("13.104761904761904em")
+                .setHeight("2.1333333333333333em")
+                .setCaption("Sim Name")
+                .setHAlign("left")
+                .setFontColor("#2F4F4F")
+                .setFontSize("22px")
+                .setFontWeight("bold"),
+                "main"
             );
             
             return children;
