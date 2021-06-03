@@ -94,7 +94,6 @@ xui.$cache.functions = {
     }
 };
 // ]]Global Functions
-
 // [[Global Data
 xui.$cache.data = {
     "$DATE_FORMAT":"gmt"
@@ -107,12 +106,12 @@ xui.constant = {
 };
 // ]]Constant Data
 
-
 // [[Develop Env Setting
 xui.ini.$DevEnv = {
     "designViewConf":{
         "width":800,
         "height":600
-    }
+    },
+    "SpaceUnit":"px"
 };
 // ]]Develop Env Setting
