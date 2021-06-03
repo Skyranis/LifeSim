@@ -26,8 +26,7 @@ xui.Class('App', 'xui.Module',{
                 .setItems([
                     {
                         "id":"a",
-                        "caption":"page1",
-                        "imageClass":"xui-icon-xui"
+                        "caption":"page1"
                     },
                     {
                         "id":"b",
@@ -39,15 +38,25 @@ xui.Class('App', 'xui.Module',{
                     },
                     {
                         "id":"d",
-                        "caption":"page4",
-                        "closeBtn":true,
-                        "optBtn":"xui-uicmd-opt",
-                        "popBtn":true
+                        "caption":"page4"
                     }
                 ])
+                .setAutoTips(false)
+                .setDisableTips(true)
                 .setLeft("0em")
                 .setTop("0em")
+                .setSandboxTheme("classic")
                 .setValue("a")
+            );
+            
+            host.xui_ui_tabs4.append(
+                xui.create("xui.UI.Panel")
+                .setHost(host,"xui_ui_panel5")
+                .setDock("none")
+                .setLeft("0.7619047619047619em")
+                .setTop("1.6761904761904762em")
+                .setCaption("Panel"),
+                "a"
             );
             
             return children;
